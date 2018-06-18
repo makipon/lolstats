@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="/action_page.php" method="get">
+  Champion 1: <input type="text" name="fname"><br>
+  Champion 2: <input type="text" name="fname"><br>
+  Champion 3: <input type="text" name="fname"><br>
+  Champion 4: <input type="text" name="fname"><br>
+  Champion 5: <input type="text" name="fname"><br>
+  <button type="submit">Calculate Win Percentage</button>
+
+</form>
+
+</body>
+</html>
