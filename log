@@ -1,0 +1,38 @@
+6-19-2018
+
+LOG
+-deleted XAMPP stack due to too many errors, stopped using Sequel Pro, unknown crashes
+*macOS Sierra comes with PHP and Apache
+
+DID THE FOLLOWING STEPS AND RAN COMMANDS, SEQUENTIAL
+----------------------------------------
+sudo nano /etc/apache2/httpd.conf
+removed # (comment) from #LoadModule php7_module libexec/apache2/libphp.so
+sudo apachectl restart
+
+Created 'Sites' folder in Users/patrick/ (Mac Finder -> Go -> home)
+Created index.php file in Sites folder
+
+sudo nano /etc/apache2/httpd.conf
+changed the following lines:
+DocumentRoot "/Library/WebServer/Documents"
+<Directory "/Library/WebServer/Documents">
+
+each to "/Users/patrick/Sites" to point apache server to php file
+
+-reinstalled brew for mac
+-reinstalled SQL via brew on terminal
+----------------------------------------
+
+
+-reinstalled brew from mac
+-installed SQL via brew on terminal
+-logged in through terminal with  --skip-grant-tables option
+FLUSH PRIVVELGES;
+ALTER USER 'root@'localhost' IDENTIFIED BY 'eskimos5';
+can now log in with password
+
+created connection to local database on MySQL workbench
+changed connection string to 127.0.0.1 instead of local host, 
+
+confirmed that when running index.php it is now making a connection to the SQL database
